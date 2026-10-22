@@ -15,6 +15,10 @@ check_root(){
     fi
 }
 
+timestamp(){
+    date "+%F %T" 
+}
+
 mkdir -p $logs_folder
 
 echo -e "$(timestamp) [INFO] ==== Script started Execution =====" | tee -a $logs_file
